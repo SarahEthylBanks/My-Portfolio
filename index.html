@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/style.css">
+        <link href='https://fonts.googleapis.com/css?family=Source Sans Pro' rel='stylesheet'>
+        <style>
+            body {
+                font-family: 'Source Sans Pro';font-size: 22px;
+            }
+        </style>
+        <title> Sarah Banks Portfolio </title>
+    </head>
+    <body>
+
+        <header class ="Navigation">
+
+        <!--   <div class="header logo">
+                <img src="images/logoportfolio.png"> <!-- made modification, by taking out "UX_UI_HW_17/" in this line-->
+            <!-- </div> --> 
+
+<!-- section below: includes header navigation, with buttons "Home" "About" "Contact" "Work" -->
+            <!-- <nav class="inline-block">
+                <ul>
+                    <li class="inline-block"> <!-- made into link (like clickable nav bar button) --> 
+            <!--            <button class="centered"> Home </button> 
+                    </li>
+                    <li class="inline-block"> <!-- made into link (like clickable nav bar button) -->
+            <!--            <button class="centered"> About</button> 
+                    </li>
+                    <li class="inline-block"> <!-- made into link (like clickable nav bar button) -->
+            <!--            <button class="centered"> Work</button> 
+                    </li>
+                    <li class="inline-block"> <!-- made into link (like clickable nav bar button) -->
+            <!--            <button class="centered"> Contact</button> 
+                    </li>
+                </ul>
+            </nav>
+        </header>     -->
+
+            <div class="topnav">
+                <a class="active"  href="header logo">
+                    <img src="images/logoportfolio.png"> <!-- made modification, by taking out "UX_UI_HW_17/" in this line-->
+                </a>
+
+                <a class="active" href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#work">Work</a>
+                <div class="topnav-right">
+                <a href="#contact">Contact</a>
+                </div>
+            </div>    
+
+
+        <!-- added in the "UX_UI_HW_17" section above, but currently not functioning -->
+        <section class= "heroimg"> 
+            <div class= "div1">
+                <div class= "workGrid">
+                    <img src ="images/portraitforportfolio.png"><!--I also removed the same section, as line 13-->
+                    <!--<p>
+                        I'm an UX designer 
+                        I aim to create helpful user experiences, in all forms of digital products.
+                    </p>
+                    <button class="centered"> 
+                        See My Work...
+                    </button>-->
+                </div>
+            </div> 
+            <div class="div1">  <!-- added in another element with class div2, to try and separate the image png, from written content-->
+                <div class="workGrid">
+                    <p>
+                        I'm an UX designer 
+                        I aim to create helpful user experiences, in all forms of digital products.
+                    </p>
+                    <!-- <button class="centered"> -->
+                    <button id="SeeMyWork">
+                        See My Work...
+                    </button>
+                    
+                    <script>
+                        document.getElementById("SeeMyWork").addEventListener("click", myFunction);
+                        function myFunction() {
+                        alert ("Do you wish to be redirrected to see my work?");}
+                    </script> <!-- this code seems to work, but it doesn't seem to work in the js file-->
+
+                </div>
+            </div>
+        </section>
+
+
+<!-- My Work Section Constructed using CSS Grid -->
+        <section class= "myWork"> 
+            <h1> 
+                Work 
+            </h1>
+            <div class= "div1">
+                <div class="workGrid"> <!-- big container-->
+
+               <!--  Project 1-->
+                    <div> <!-- Project 1 Image -->
+                        <img src="images/icons8-image.gif">
+                    </div>
+
+
+                    <div> <!-- Additional info Project 1-->
+                        <h4>
+                            Project 1 - BurntLatte
+                        </h4>
+                        <p>
+                            Small Buisness- Digital Platform Research and Design 
+                        </p>
+                        <button> 
+                            View Project...
+                        </button>
+                    </div>
+                </div>
+            
+                <!--</div>-->
+
+                <!-- Project 2 -->
+                <div class="workGrid">
+                    <div> <!-- Project 2 Image -->
+                        <img src="images/icons8-image.gif">
+                    </div>
+
+
+                    <div> <!-- Additional info Project 2-->
+                        <h4>
+                            Project 2 - Non-Profit Redesign
+                        </h4>
+                        <p>
+                            Webpage Redesign for Desktop and Mobile
+                        </p>
+                        <button> 
+                            View Project...
+                        </button>
+                    </div>
+                </div>
+                <!--</div>-->
+
+                <!-- Project 3 -->
+                <div class="workGrid">
+                    <div> <!-- Project 3 Image -->
+                        <img src="images/icons8-image.gif">
+                    </div>
+
+
+                    <div> <!-- Additional info Project 3-->
+                        <h4>
+                            Project 3 - IDoMitzvah Nonprofit
+                        </h4>
+                        <p>
+                            UX Research and Design for NonProfit Website
+                        </p>
+                        <button> 
+                            View Project...
+                        </button>
+                    </div>
+                </div>
+                <!--</div>-->
+            </div>
+            <button class="centered"> 
+                View All Projects...
+            </button>
+
+            </div>
+            <!-- <button> 
+                View All Projects...
+            </button> -->
+
+        </section>  
+<!--  My UX Skills section coded using CSS flex -->
+        <section class= "mySkills"> 
+            <h1> 
+                Skills 
+            </h1>
+            <div class="flexContainer"> <!-- big container-->
+                <div> <!-- Project 1 -->
+                    <img src="images/icons8-analyze copy.gif">
+                    <h3>
+                        User Experience Research
+                    </h3>
+                    <p>
+                        A big part of what I do as a designer, includes understanding the users by conducting in depth user research.
+                    </p>
+                </div>
+                <div> <!-- Project 2 -->
+                    <img src="images/icons8-design.gif">
+                    <h3>
+                        User Experience Design
+                    </h3>
+                    <p>
+                        By analyzing user research, I've itterated with teams and on freelance projects, to develop effective design solutions.
+                    </p>
+                </div>
+                <div> <!-- Project 3 -->
+                    <img src="images/icons8-laptop-settings.gif">
+                    <h3>
+                        Web Development
+                    </h3>
+                    <p>
+                        To better communicate and understand how my designs come to life, I have become proficcient in Python, Java Script, HTMl and CSS. 
+                    </p>
+                </div>
+            </div>
+        </section>  
+
+
+<!-- In the HW instructions, it says to add the footer, into the section, class heroimg
+unsure if this is the right place for it -->
+        <footer> 
+            <ul>
+                <li class="inline-block">
+                    Home  
+                </li>    
+                <li class="inline-block">
+                    About
+                </li>
+                <li class="inline-block">
+                 Work
+                </li>
+                <li class="inline-block">
+                    Contact
+                </li>
+            </ul>
+        </footer>
+
+
+    </body>
+    <script> src="https://code.jquery.com/jquery-3.4.1.min.js"</script>
+    <script src="js/index.js">
+    </script>
+</html>

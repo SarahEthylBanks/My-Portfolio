@@ -67,9 +67,8 @@ ul {
 /*   */
  /* Hero Image */
 .heroimg {
-    height: 650px;
-    padding: 30px 16px;
-}
+    height: 650px; /* gives margin space between sides of page and content in hero section */
+    padding: 0px 50px;}
 
 .content {
     width: 300px; /*changed from 500px to 300px, which was assigned in HW */
@@ -160,6 +159,7 @@ footer ul {
     margin: 0 auto;
 
 
+
     /*display: grid; 
     width: 33%;
     padding: center;
@@ -195,6 +195,14 @@ h1 {
     flex-direction: column;
     text-align:center;
     margin: 0 auto;
+}
+
+h3 {
+    color: #000000;
+    text-align: center;
+    padding: 5px 16px;
+    text-decoration: none;
+    font-size: 60px;
 }
 
 img {
@@ -235,8 +243,17 @@ button {
     .grid-container {
         width: 100%;
     }
+    /*.workGrid2 > div{
+        display: grid; 
+        width: 50%;
+        padding: center; 
+        flex-direction: column;
+        text-align:center;
+        grid-auto-rows: 30px;
+        margin: 0 auto;
 
-    .workGrid > div{
+    }
+    .workGrid > div{ 
 
         display: grid; 
         width: 33%;
@@ -246,7 +263,7 @@ button {
         grid-auto-rows: 50px;
         margin: 0 auto;
         /*grid-template-columns: 200px 200px 200px;*/
-        /*grid-template-areas: 'BurntLatte NonProfit NonProfit';*/
+        /*grid-template-areas: 'BurntLatte NonProfit NonProfit';
 
-    }
+    }*/
 }

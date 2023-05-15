@@ -19,6 +19,22 @@ ul {
     width: 50%;
     margin-left: auto;
 }
+
+
+p {
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.toppar {
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 50px;
+    margin-inline-end: 0px;
+    font-family: 'Sofia Sans';font-size: 22px;
+}
 /*  */
 
 /* Add a black background color to the top navigation */
@@ -160,6 +176,7 @@ footer ul {
 
 }
 
+
 .workGrid2 > div{
     display: grid; 
     width: 50%;
@@ -170,7 +187,7 @@ footer ul {
     margin: 0 auto;
 
 }
-
+/* div is a divider or a section in an HTML element*/
 
 
     /*display: grid; 
@@ -222,11 +239,11 @@ h3 {
 img {
     /*height: 50px;
     width: 170px;*/
-    padding: center;
+    padding: right;
     flex-direction: column;
     text-align:center;
-    margin: 0 auto;
-    margin-top: 10 auto;
+    margin: 10px 50px;
+    margin-top: 10 10px;
 
 }
 button {

@@ -1,0 +1,252 @@
+.inline-block {
+    display: inline-block;
+    vertical-align: top;
+}
+ /* Header Logo */
+div.logo { 
+    width: 23%;
+    padding: 1%;
+    text-align:center;
+
+ /* Navigation */
+}
+nav.inline-block {
+    width: 75%;  /* I changed it from 73% to 68%, a separate choice from the HW*/
+
+    padding: center; /* I changed it from 1% to 5%, a separate choice from the HW*/
+}
+ul {
+    width: 50%;
+    margin-left: auto;
+}
+/*  */
+
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #E9A556;
+    overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #000000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 37px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  text-decoration: none; border-bottom:1px solid black;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  /*background-color: #7e8885;*/
+  text-decoration: 2px;
+  color: rgb(0, 0, 0);
+}
+
+/* Right-aligned section inside the top navigation */
+.topnav-right {
+  float: right;
+}
+
+
+
+
+
+
+
+
+
+/*   */
+ /* Hero Image */
+.heroimg {
+    height: 650px;
+    padding: 30px 16px;
+}
+
+.content {
+    width: 300px; /*changed from 500px to 300px, which was assigned in HW */
+    margin: 0 auto;
+
+    display: flex;  /*added in from the workGrid section, to try and implement rows */
+    padding: center;
+    flex-direction: column;
+    text-align:center;
+    margin: 0 auto;
+}
+
+ /* Footer */
+footer {
+    background-color: #757576; /* changed color to a lighter grey */
+}
+
+footer ul {
+    display: inline-block;
+    /*vertical-align:top;*/
+    padding:center;
+}
+
+/* extras down below, in case any were referenced */
+
+ /* Header Styles */
+ .header {
+    height: 250px;
+    max-height: 500px;
+    background-image: url(../images/upsBackground.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+  }
+  #pageTopic {
+     text-align: center;
+  }
+   /* Primary Color */
+   .colorContainer {
+       display: inline-block;
+       margin: 15px;
+   }
+   .swatch {
+      height: 200px;
+      width: 170px;
+      border: 1px solid black;
+  }
+  .hexCode {
+      padding: 15px;
+      text-align: center;
+      border: 1px solid black;
+      border-top: none;
+      border-bottom-left-radius: 7px;
+      border-bottom-right-radius: 7px;
+  }
+  /* Typography CSS */
+  .type_container {
+      display: inline-block;
+      margin: 20px;
+  }
+  
+  /* UI Elements */
+  .button {
+      display: inline-block;
+      padding: 15px;
+      margin: 15px;
+      width: minmax(50px);
+      text-align: center;
+      font-size: 37px;
+      color: orange;
+      /*outline: 1px solid red;*/
+      grid-auto-rows: minmax(50px, auto);
+  }
+  .flexContainer > div {
+    display: flex;
+    width: 50%;
+    padding: center;
+    flex-direction: column;
+    text-align:center;
+    margin: 0 auto;
+}
+.workGrid > div{
+    display: flex;
+    width: 50%;
+    padding: center;
+    flex-direction: column;
+    text-align:center;
+    margin: 0 auto;
+
+
+    /*display: grid; 
+    width: 33%;
+    padding: center;
+    flex-direction: row;
+    text-align:center;
+    /*grid-auto-rows: 50px;*/
+    /*margin: 0 auto;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-areas: 'BurntLatte NonProfit NonProfit';*/
+
+}
+/*div {
+    display: flex;
+    /*flex-direction: column;*//*
+    flex-direction: row;
+}*/
+.div1 {
+    display: flex;
+    /*flex-direction: column;*/
+    flex-direction: row;
+    padding: center;
+}
+.div2 {
+    display: flex;
+    /*flex-direction: column;*/
+    flex-direction: column;
+}
+
+h1 {
+    height: 50px;
+    width: 170px;
+    padding: center;
+    flex-direction: column;
+    text-align:center;
+    margin: 0 auto;
+}
+
+img {
+    /*height: 50px;
+    width: 170px;*/
+    padding: center;
+    flex-direction: column;
+    text-align:center;
+    margin: 0 auto;
+    margin-top: 10 auto;
+
+}
+button {
+    display: inline-block;
+    padding: center;
+    margin: 20px;
+    width: minmax(50px auto);
+    font-size: 21px;
+    text-align: center;
+    color: black;
+    outline: 1px solid black;
+    grid-auto-rows: minmax(50px, auto);}
+
+.centered {
+    display: flex;
+    width: auto;
+    padding: center;
+    flex-direction: column;
+    text-align:center;
+    margin: 0 auto;
+}
+
+@media only screen and (max-width: 600) {
+    div.flexContainer {
+        flex-direction: row;
+    }
+    
+    .grid-container {
+        width: 100%;
+    }
+
+    .workGrid > div{
+
+        display: grid; 
+        width: 33%;
+        padding: center;
+        flex-direction: column;
+        text-align:center;
+        grid-auto-rows: 50px;
+        margin: 0 auto;
+        /*grid-template-columns: 200px 200px 200px;*/
+        /*grid-template-areas: 'BurntLatte NonProfit NonProfit';*/
+
+    }
+}
